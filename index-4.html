@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0c2e34">
+<meta name="description" content="Elara Wellness: professional spa and massage therapy in a calm, clean setting. Tap to book your appointment.">
+<title>Elara Wellness | Spa & Massage</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f7f0ea;--white:#fffdfb;--ink:#1d2a2c;--muted:#6c7b7d;--teal:#14424a;--deep:#0c2e34;--aqua:#dcebe9;--rose:#b98468;--rose2:#d9ab90;--line:#e8dcd2}
+*{box-sizing:border-box}
+html{background:var(--bg)}
+body{margin:0;color:var(--ink);font:400 16px/1.6 Jost,system-ui,-apple-system,sans-serif;background:linear-gradient(180deg,#faf4ee,#f1e8df);-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent;padding-bottom:calc(92px + env(safe-area-inset-bottom,0px))}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;margin:0}
+a{text-decoration:none;color:inherit}
+.page{width:min(540px,92vw);margin:0 auto}
+.top{display:flex;align-items:center;justify-content:center;gap:10px;padding:calc(env(safe-area-inset-top,0px) + 18px) 0 14px}
+.top svg{width:26px;height:26px;color:var(--rose)}
+.top b{font:600 1.1rem "Cormorant Garamond",Georgia,serif;letter-spacing:.38em;text-transform:uppercase;color:var(--deep);padding-left:.38em}
+.hero{position:relative;overflow:hidden;border-radius:28px;padding:34px 24px 30px;text-align:center;color:#fff;background:radial-gradient(70% 60% at 50% 0%,rgba(217,171,144,.28),transparent 70%),linear-gradient(165deg,#1f5c67 0%,var(--deep) 100%);box-shadow:0 24px 50px rgba(12,46,52,.25)}
+.rip{position:absolute;left:50%;top:-40px;width:340px;height:340px;margin-left:-170px;pointer-events:none}
+.rip circle{fill:none;stroke:#fff;stroke-opacity:.09}
+.lotus{position:relative;display:block;width:170px;height:119px;margin:0 auto}
+.eyebrow{position:relative;margin-top:16px;font:500 .68rem Jost,sans-serif;letter-spacing:.34em;text-transform:uppercase;color:var(--rose2)}
+.hero h1{position:relative;font-size:clamp(3.4rem,17vw,4.8rem);line-height:1;margin-top:8px;letter-spacing:.04em}
+.tag{position:relative;margin:8px 0 0;font:italic 500 1.35rem "Cormorant Garamond",Georgia,serif;color:#e8f1ef}
+.copy{position:relative;margin:12px auto 0;max-width:32ch;color:#c4d6d3;font-size:.95rem}
+.book{position:relative;display:flex;align-items:center;justify-content:center;gap:10px;margin-top:24px;min-height:60px;border-radius:999px;background:linear-gradient(135deg,#e2b79c,var(--rose));color:#2a1a12;font:500 .86rem Jost,sans-serif;letter-spacing:.18em;text-transform:uppercase;box-shadow:0 12px 26px rgba(0,0,0,.25)}
+.book:focus-visible,.svc:focus-visible,.bar a:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.explore{position:relative;display:inline-flex;align-items:center;gap:10px;margin-top:22px;min-height:50px;padding:0 24px;border-radius:999px;border:1.5px solid rgba(217,171,144,.85);background:rgba(255,255,255,.1);color:#fff;font:500 .76rem Jost,sans-serif;letter-spacing:.18em;text-transform:uppercase}
+.explore svg{width:20px;height:20px;color:var(--rose2)}
+.explore:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.sec{padding-top:36px}
+.sec h2{font-size:2rem;color:var(--deep)}
+.sec .s{margin:2px 0 16px;color:var(--muted);font-size:.93rem}
+.list{display:grid;gap:10px}
+.svc{display:flex;align-items:center;gap:14px;min-height:78px;padding:14px 16px;background:var(--white);border:1px solid var(--line);border-radius:20px;box-shadow:0 6px 18px rgba(60,45,35,.05)}
+.ico{flex:none;width:46px;height:46px;border-radius:50%;background:var(--aqua);color:var(--teal);display:grid;place-items:center}
+.ico svg{width:24px;height:24px}
+.svc div{flex:1;min-width:0}
+.svc b{display:block;font:600 1.25rem/1.15 "Cormorant Garamond",Georgia,serif;color:var(--deep)}
+.svc span{display:block;font-size:.84rem;color:var(--muted);line-height:1.35;margin-top:2px}
+.go{flex:none;width:40px;height:40px;border-radius:50%;background:var(--deep);color:var(--rose2);display:grid;place-items:center}
+.go svg{width:19px;height:19px}
+.trust{display:grid;grid-template-columns:repeat(3,1fr);margin-top:30px;background:var(--white);border:1px solid var(--line);border-radius:20px}
+.trust div{padding:16px 6px;text-align:center}
+.trust div+div{border-left:1px solid var(--line)}
+.trust svg{width:26px;height:26px;color:var(--rose);display:block;margin:0 auto 6px}
+.trust b{display:block;font:500 .7rem Jost,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--teal)}
+.trust span{display:block;font-size:.72rem;color:var(--muted);margin-top:2px}
+.about{padding:40px 6px 6px;text-align:center}
+.rl{width:44px;height:1px;background:var(--rose);margin:0 auto 16px}
+.about h3{font-size:1.7rem;color:var(--deep);line-height:1.15}
+.about p{margin:10px auto 0;max-width:38ch;color:var(--muted);font-size:.93rem}
+.pol{display:grid;gap:8px;margin-top:28px}
+.pol details{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:12px 16px}
+.pol summary{cursor:pointer;font:500 .78rem Jost,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--teal)}
+.pol p{margin:8px 0 0;font-size:.85rem;color:var(--muted)}
+footer{padding:30px 0 10px;text-align:center;color:#8c8178;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase}
+footer b{display:block;font:600 1.15rem "Cormorant Garamond",Georgia,serif;letter-spacing:.42em;color:var(--deep);margin-bottom:6px}
+footer .tags{color:var(--rose);margin-bottom:6px}
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:20;padding:12px 4vw calc(12px + env(safe-area-inset-bottom,0px));background:linear-gradient(180deg,rgba(247,240,234,0),#f7f0ea 35%)}
+.bar a{display:flex;align-items:center;justify-content:center;max-width:540px;margin:0 auto;min-height:58px;border-radius:999px;gap:10px;background:var(--deep);color:#fff;border:1.5px solid rgba(217,171,144,.7);font:500 .84rem Jost,sans-serif;letter-spacing:.18em;text-transform:uppercase;box-shadow:0 14px 30px rgba(12,46,52,.35)}
+.bar a svg{width:20px;height:20px;color:var(--rose2)}
+</style>
+</head>
+<body>
+<div class="page">
+
+<div class="top">
+  <svg viewBox="0 0 100 80" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round" aria-hidden="true"><path d="M50 8c11 13 11 29 0 42-11-13-11-29 0-42zM50 50c-16 0-29-8-34-24 16-3 30 4 34 24zM50 50c16 0 29-8 34-24-16-3-30 4-34 24zM50 56c-22 6-38-2-46-16 18-4 36 0 46 16zM50 56c22 6 38-2 46-16-18-4-36 0-46 16z"/></svg>
+  <b>Elara</b>
+</div>
+
+<main>
+<section class="hero">
+  <svg class="rip" viewBox="0 0 340 340" aria-hidden="true"><circle cx="170" cy="170" r="160"/><circle cx="170" cy="170" r="128"/><circle cx="170" cy="170" r="96"/></svg>
+  <svg class="lotus" viewBox="0 0 160 112" aria-hidden="true">
+    <defs>
+      <linearGradient id="pg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d9ab90" stop-opacity=".30"/><stop offset="1" stop-color="#d9ab90" stop-opacity=".12"/></linearGradient>
+      <linearGradient id="pb" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d9ab90" stop-opacity=".22"/><stop offset="1" stop-color="#d9ab90" stop-opacity=".08"/></linearGradient>
+      <radialGradient id="gl" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#d9ab90" stop-opacity=".22"/><stop offset="1" stop-color="#d9ab90" stop-opacity="0"/></radialGradient>
+    </defs>
+    <circle cx="80" cy="54" r="54" fill="url(#gl)"/>
+    <g fill="none" stroke="#fff" stroke-opacity=".28" stroke-width="1"><ellipse cx="80" cy="100" rx="74" ry="9"/><ellipse cx="80" cy="100" rx="52" ry="6"/><ellipse cx="80" cy="100" rx="30" ry="3.5"/></g>
+    <g stroke="#d9ab90" stroke-opacity=".95" stroke-width="1.3" stroke-linejoin="round">
+      <path d="M80 90C50 90 26 72 20 46c28 0 52 16 60 44z" fill="url(#pb)"/>
+      <path d="M80 90c30 0 54-18 60-44-28 0-52 16-60 44z" fill="url(#pb)"/>
+      <path d="M80 90C58 92 36 80 28 58c24-2 44 8 52 32z" fill="url(#pg)"/>
+      <path d="M80 90c22 2 44-10 52-32-24-2-44 8-52 32z" fill="url(#pg)"/>
+      <path d="M80 92C62 72 62 42 80 14c18 28 18 58 0 78z" fill="url(#pg)"/>
+    </g>
+    
+    <g fill="#d9ab90"><path d="M24 22l1.6 4.4L30 28l-4.4 1.6L24 34l-1.6-4.4L18 28l4.4-1.6z" opacity=".8"/><path d="M138 30l1.2 3.2 3.2 1.2-3.2 1.2-1.2 3.2-1.2-3.2-3.2-1.2 3.2-1.2z" opacity=".7"/><path d="M122 10l.9 2.4 2.4.9-2.4.9-.9 2.4-.9-2.4-2.4-.9 2.4-.9z" opacity=".6"/></g>
+  </svg>
+  <div class="eyebrow">Spa · Massage · Wellness</div>
+  <h1>Elara</h1>
+  <p class="tag">Relax. Restore. Renew.</p>
+  <p class="copy">Professional spa and massage therapy in a calm, clean setting.</p>
+  <a class="explore" href="https://t.me/Elaraelite?text=Hello%2C%20I%20would%20like%20to%20check%20availability." target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2.5"/><path d="M4 10h16M9 3v4M15 3v4M9 15l2 2 4-4"/></svg>Check availability</a>
+</section>
+
+<section class="sec" id="treatments">
+  <h2>Our Treatments</h2>
+  <p class="s">Tap any treatment to enquire.</p>
+  <div class="list">
+    <a class="svc" href="https://t.me/Elaraelite?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20Spa%20and%20More." target="_blank" rel="noopener noreferrer">
+      <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 4c2.5 3 2.5 6.5 0 9.5-2.5-3-2.5-6.5 0-9.5zM12 13.5c-3.5 0-6-1.5-7-4.5 3-.5 6 .8 7 4.5zM12 13.5c3.5 0 6-1.5 7-4.5-3-.5-6 .8-7 4.5zM5 17c4 2 10 2 14 0"/></svg></div>
+      <div><b>Spa &amp; More</b><span>Comfort-focused spa treatments and relaxation packages</span></div>
+      <i class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M4 6a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H10l-4 4v-4H5a1 1 0 0 1-1-1z"/></svg></i>
+    </a>
+    <a class="svc" href="https://t.me/Elaraelite?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20Massage%20Therapy." target="_blank" rel="noopener noreferrer">
+      <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 21c-4-3-7-6-7-10a4 4 0 0 1 7-2.5A4 4 0 0 1 19 11c0 4-3 7-7 10z"/></svg></div>
+      <div><b>Massage Therapy</b><span>Relaxing treatments by trained therapists</span></div>
+      <i class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M4 6a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H10l-4 4v-4H5a1 1 0 0 1-1-1z"/></svg></i>
+    </a>
+    <a class="svc" href="https://t.me/Elaraelite?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20Aromatherapy." target="_blank" rel="noopener noreferrer">
+      <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 3c4 5 6 8 6 11a6 6 0 0 1-12 0c0-3 2-6 6-11z"/></svg></div>
+      <div><b>Aromatherapy</b><span>Calming essential-oil care for body and mind</span></div>
+      <i class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M4 6a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H10l-4 4v-4H5a1 1 0 0 1-1-1z"/></svg></i>
+    </a>
+  </div>
+
+  <div class="trust">
+    <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-5 4-7 8-7s7 2 8 7"/></svg><b>Trained</b><span>Therapists</span></div>
+    <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg><b>Hygienic</b><span>Clean setting</span></div>
+    <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><b>Confirmed</b><span>Your time</span></div>
+  </div>
+</section>
+</main>
+
+<section class="about">
+  <div class="rl"></div>
+  <h3>A calm space for body and mind</h3>
+  <p>Elara Wellness provides professional spa and massage therapy with trained therapists, fresh linen and sanitised equipment, in a quiet and comfortable setting.</p>
+</section>
+
+<footer>
+  <b>Elara</b>
+  <div class="tags">Spa · Massage · Wellness</div>
+  <div>© 2026 Elara Wellness · Spa &amp; Wellness</div>
+</footer>
+</div>
+
+<div class="bar"><a href="https://t.me/Elaraelite?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 20.5S4.5 16 4.5 10.3A4.3 4.3 0 0 1 12 7.6a4.3 4.3 0 0 1 7.5 2.7C19.5 16 12 20.5 12 20.5z"/></svg>Book an Appointment</a></div>
+<script src="config.js"></script>
+<script>
+(function(){
+  var u=(typeof TG_USERNAME==="string"&&TG_USERNAME)?TG_USERNAME.replace(/^@/,"").replace(/^https?:\/\/t\.me\//,""):"";
+  if(!u)return;
+  document.querySelectorAll('a[href*="t.me/"]').forEach(function(a){
+    a.href=a.href.replace(/t\.me\/[^?]+/,"t.me/"+u);
+  });
+})();
+</script>
+</body>
+</html>
